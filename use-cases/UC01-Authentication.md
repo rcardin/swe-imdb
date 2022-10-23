@@ -8,7 +8,7 @@ As a generic user, I want to authenticate myself, using my username and password
 **Main Scenario**:  
 1. (UC06) The user inserts her username
 2. (UC09) The user inserts her password
-3. The user must fulfill a CAPTCHA
+3. (UC01.1) The user must fulfill a CAPTCHA
 
 **Includes**:  
 * UC09
