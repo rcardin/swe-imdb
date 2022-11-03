@@ -9,13 +9,17 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>in.rcard</groupId>
-	<artifactId>swe-imdb</artifactId>
+	<artifactId>swe-imdb-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>swe-imdb</name>
-	<description>Demo project for Spring Boot</description>
+	<packaging>pom</packaging>
+	<description>Toy project used during the Software Engineering course</description>
 	<properties>
 		<java.version>19</java.version>
 	</properties>
+	<modules>
+		<module>hex</module>
+		<module>layered</module>
+	</modules>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -46,14 +50,5 @@
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
