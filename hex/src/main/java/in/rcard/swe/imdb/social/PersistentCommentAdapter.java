@@ -1,7 +1,9 @@
 package in.rcard.swe.imdb.social;
 
 import java.util.Optional;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PersistentCommentAdapter implements CreateNewCommentOutboundPort {
 
   private final CommentDao dao;

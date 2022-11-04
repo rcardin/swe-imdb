@@ -5,34 +5,20 @@ import java.util.List;
 /**
  * <pre>
  *   {
+ *     "id": 1,
+ *     "text": "This is my first comment"
+ *     "author": "aUser",
  *     "responses": [
  *       {
- *
- *       },
- *       {
- *
+ *         "id": 2,
+ *         "text": "This is my first response",
+ *         "author": "anotherUser"
  *       }
  *     ]
  *   }
  * </pre>
  */
-public class Comment {
-  
-  private final String text;
-  private final List<Comment> responses;
-  
-  public Comment(String text, List<Comment> responses) {
-    this.text = text;
-    this.responses = responses;
-  }
-  
-  public List<Comment> getResponses() {
-    return responses;
-  }
-  
-  public String getText() {
-    return text;
-  }
+public record Comment(Long id, String text, String author, List<CommentResponse> responses) {
   
   public static Comment valueOf(PersistentComment persistentComment) {
     return null;

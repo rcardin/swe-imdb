@@ -11,7 +11,13 @@
 	<name>hex-swe-imdb</name>
 	<description>Implementation of the toy project using an Hexagonal architecture</description>
 
-	<dependencies/>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+	</dependencies>
 
 	<build>
 		<plugins>
