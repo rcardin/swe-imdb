@@ -1,7 +1,6 @@
 package in.rcard.swe.imdb.cli;
 
 import in.rcard.swe.imdb.social.CommentResponse;
-import in.rcard.swe.imdb.social.PersistentComment;
 import java.util.List;
 
 /**
@@ -22,4 +21,15 @@ import java.util.List;
  *   }
  * </pre>
  */
-public record Comment(Long id, String text, String author, List<CommentResponse> responses) {}
+public record Comment(Long id, String text, String author, List<CommentResponse> responses) {
+  
+  @Override
+  public String toString() {
+    return "Comment{" +
+               "id=" + id +
+               ", text='" + text + '\'' +
+               ", author='" + author + '\'' +
+               ", responses=" + responses +
+               '}';
+  }
+}

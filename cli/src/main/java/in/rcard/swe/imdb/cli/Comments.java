@@ -1,13 +1,25 @@
 package in.rcard.swe.imdb.cli;
 
-import in.rcard.swe.imdb.social.Comment;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Comments extends Subject {
   
-  private final List<Comment> comments;
+  private final CommentsRestClient commentsRestClient;
+  private List<Comment> comments;
   
-  public Comments(List<Comment> comments) {
-    this.comments = comments;
+  public Comments(CommentsRestClient commentsRestClient) {
+    this.commentsRestClient = commentsRestClient;
+    this.comments = new ArrayList<>();
+  }
+  
+  public void addComment(Comment comment) {
+    commentsRestClient.addComment(comment);
+    this.comments = commentsRestClient.findAll();
+    notifyObservers();
+  }
+  
+  public List<Comment> getListOfComments() {
+    return this.comments;
   }
 }
