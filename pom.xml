@@ -19,6 +19,7 @@
 	<modules>
 		<module>hex</module>
 		<module>layered</module>
+		<module>cli</module>
 	</modules>
 	<dependencies>
 		<dependency>
@@ -51,4 +52,13 @@
 		</dependency>
 	</dependencies>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>in.rcard</groupId>
+				<artifactId>hex-swe-imdb</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>

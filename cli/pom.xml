@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>in.rcard</groupId>
+    <artifactId>swe-imdb-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>cli-swe-imdb</artifactId>
+  <name>cli-swe-imdb</name>
+  <description>CLI for the swe-imdb project</description>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>in.rcard</groupId>
+      <artifactId>hex-swe-imdb</artifactId>
+    </dependency>
+  </dependencies>
+
+</project>
